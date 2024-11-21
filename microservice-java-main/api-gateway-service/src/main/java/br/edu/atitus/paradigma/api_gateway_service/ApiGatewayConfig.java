@@ -14,7 +14,7 @@ public class ApiGatewayConfig {
 		       .route(rota -> rota
 		    		   .path("/get")
 		    		   .filters(f -> f
-		    				   .addRequestHeader("Usuario", "gaiogabriel")
+		    				   .addRequestHeader("Usuario", "Gabriel Gaio")
 		    				   .addRequestHeader("Senha", "suaSenhaAqui")
 		    				   .addRequestParameter("Parametros", "ValorParametro")
 		    				   .addRequestHeader("Servidor", "meuServer"))
@@ -22,19 +22,19 @@ public class ApiGatewayConfig {
 		       .route(rota -> rota
 		    		   .path("/cambio-service/**")
 		    		   .filters(f -> f
-		    				   .addRequestHeader("Usuario", "gaiogabriel")
+		    				   .addRequestHeader("Usuario", "Gabriel Gaio")
 		    				   .addRequestHeader("Senha", "suaSenhaAqui"))
 		    		   .uri("lb://cambio-service"))
 		       .route(rota -> rota
 		    		   .path("/produto-service/**")
 		    		   .filters(f -> f
-		    				   .addRequestHeader("Usuario", "gaiogabriel")
+		    				   .addRequestHeader("Usuario", "Gabriel Gaio")
 		    				   .addRequestHeader("Senha", "suaSenhaAqui"))
 		    		   .uri("lb://produto-service"))
 		       .route(rota -> rota
 		    		   .path("/saudacao-service/**")
 		    		   .filters(f -> f
-		    				   .addRequestHeader("Usuario", "gaiogabriel")
+		    				   .addRequestHeader("Usuario", "Gabriel Gaio")
 		    				   .addRequestHeader("Senha", "suaSenhaAqui"))
 		    		   .uri("lb://saudacao-service"))
 		       .build();
